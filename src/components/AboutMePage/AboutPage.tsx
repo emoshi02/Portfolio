@@ -1,6 +1,7 @@
 import React from 'react';
-import { experienceData } from '../experienceData';
-import { designIcons, programmingIcons } from '../skills';
+import { designIcons, programmingIcons } from '../../skills';
+import ExperienceDiagram from './ExperienceDiagram';
+import Skills from './skills.';
 
 const AboutPage = () => {
   return (
@@ -20,27 +21,7 @@ const AboutPage = () => {
         </div>
         <div className="about-photo"></div>
       </span>
-      <div className="experience-info-wrapper">
-        <div className="experience-info">
-          {experienceData.map((data, index) => (
-            <>
-              {index % 2 === 0 && <div key={`empty-before-${index}`}></div>}
-              <div
-                className="experience-data experience-container"
-                key={`experience-${index}`}
-              >
-                {data.experience}
-              </div>
-              {index % 2 === 1 && (
-                <div
-                  className="experience-container"
-                  key={`empty-after-${index}`}
-                ></div>
-              )}
-            </>
-          ))}
-        </div>
-      </div>
+      <ExperienceDiagram />
       <div className="experience-text-wrapper">
         <p className="experience-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -53,22 +34,8 @@ const AboutPage = () => {
         </p>
       </div>
       <div className="skill-wrapper">
-        <div className="skill">
-          <h1>Lorem Ipsum</h1>
-          <div className="icon-wrapper">
-            {programmingIcons.map((_, index) => (
-              <div className="skill-icon" key={`programming ${index}`}></div>
-            ))}
-          </div>
-        </div>
-        <div className="skill">
-          <h1>Lorem Ipsum</h1>
-          <div className="icon-wrapper">
-            {designIcons.map((_, index) => (
-              <div className="skill-icon" key={`design ${index}`}></div>
-            ))}
-          </div>
-        </div>
+        <Skills skillArray={programmingIcons} />
+        <Skills skillArray={designIcons} />
       </div>
     </>
   );

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router';
-import AboutPage from './AboutPage';
-import Footer from './Footer';
-import FooterMobile from './FooterMobile';
+import AboutPage from './AboutMePage/AboutPage';
+import Footer from './Footer/Footer';
+import FooterMobile from './Footer/FooterMobile';
 import Header from './Header';
-import MainPage from './MainPage';
-import ProjectPage from './ProjectPage';
+import MainPage from './MainPage/MainPage';
+import ProjectPage from './ProjectPage/ProjectPage';
 import SideMenu from './SideMenu';
 
 const App: React.FC = () => {

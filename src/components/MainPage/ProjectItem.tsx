@@ -1,5 +1,5 @@
 import React from 'react';
-import { Data } from '../projectData';
+import { Data } from '../../projectData';
 
 const ProjectItem = ({ label, desc }: Data) => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import AuthorName from './AuthorName';
 
 const FooterMobile = () => {
   return (
@@ -15,9 +16,7 @@ const FooterMobile = () => {
             <li className="icon"></li>
           </ul>
         </div>
-        <h4 className="author-name footer-name">
-          © 2023 Emilija Rackauskaite
-        </h4>
+        <AuthorName />
       </div>
     </footer>
   );
