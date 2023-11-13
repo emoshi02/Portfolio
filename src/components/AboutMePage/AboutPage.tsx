@@ -1,7 +1,7 @@
 import React from 'react';
 import { designIcons, programmingIcons } from '../../skills';
 import ExperienceDiagram from './ExperienceDiagram';
-import Skills from './skills.';
+import Skills from './Skills.';
 
 const AboutPage = () => {
   return (
