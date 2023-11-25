@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { data } from '../../projectData';
+import LinkButton from '../LinkButton';
 
 const ProjectPage = () => {
   const id = useParams();
@@ -12,18 +13,20 @@ const ProjectPage = () => {
         <div className="project-image--full-height"></div>
         <div className="info">
           <div className="project-info-label">
-            <h1>{label}</h1>
-            <h2>{desc}</h2>
+            <h1 className="label">{label}</h1>
+            <h2 className="desc">{desc}</h2>
           </div>
-          <p>{info}</p>
-          <button className="button-link">Figma</button>
+          <p className="project-info">{info}</p>
+          <LinkButton label="Figma" />
         </div>
       </main>
       <div className="additional-info-wrapper">
         <p className="aditional-desc">{secDesc}</p>
         <div className="galery-wrapper">
-          {galery.map((_, index) => (
-            <div className="galery-item" key={index}></div>
+          {galery.map((item, index) => (
+            <div className="galery-item" key={index}>
+              {item}
+            </div>
           ))}
         </div>
       </div>

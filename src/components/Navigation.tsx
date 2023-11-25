@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import facebookLogo from '../assets/svg/facebook.svg';
+import linkedinLogo from '../assets/svg/linkedin.svg';
+import emailLogo from '../assets/svg/email.svg';
 
 const Navigation = () => {
   return (
@@ -9,9 +12,9 @@ const Navigation = () => {
           <li className="nav-item">Apie</li>
         </Link>
         <li className="nav-item">CV</li>
-        <div className="nav-item icon"></div>
-        <div className="nav-item icon"></div>
-        <div className="nav-item icon"></div>
+        <img className="icon" src={emailLogo.toString()} />
+        <img className="icon" src={linkedinLogo.toString()} />
+        <img className="icon" src={facebookLogo.toString()} />
       </ul>
     </nav>
   );

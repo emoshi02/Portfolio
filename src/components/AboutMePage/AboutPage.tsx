@@ -1,15 +1,15 @@
 import React from 'react';
 import { designIcons, programmingIcons } from '../../skills';
 import ExperienceDiagram from './ExperienceDiagram';
-import Skills from './Skills.';
+import Skills from './Skills';
 
 const AboutPage = () => {
   return (
     <>
-      <span className="about-me-wrapper">
-        <div className="info">
-          <h1>Apie mane.</h1>
-          <p>
+      <div className="about-me-page">
+        <div className="about-me-wrapper">
+          <h1 className="label">Apie mane.</h1>
+          <p className="aditional-desc">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -19,11 +19,10 @@ const AboutPage = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="about-photo"></div>
-      </span>
+      </div>
       <ExperienceDiagram />
       <div className="experience-text-wrapper">
-        <p className="experience-text">
+        <p className="aditional-desc exp-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -34,8 +33,11 @@ const AboutPage = () => {
         </p>
       </div>
       <div className="skill-wrapper">
-        <Skills skillArray={programmingIcons} />
-        <Skills skillArray={designIcons} />
+        <Skills
+          skillLabel="Programavimo Įgūdžiai"
+          skillArray={programmingIcons}
+        />
+        <Skills skillLabel="Dizaino Įgūdžiai" skillArray={designIcons} />
       </div>
     </>
   );
