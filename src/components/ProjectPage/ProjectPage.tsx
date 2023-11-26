@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useParams } from 'react-router';
 import { data } from '../../projectData';
 import LinkButton from '../LinkButton';
+import { animateBg } from '../../../bgImageAnimation';
 
 const ProjectPage = () => {
   const id = useParams();
   const { label, desc, info, secDesc, galery } = data[Number(id.id)];
 
+  const bgRef = useRef<HTMLDivElement>(null);
+  animateBg(bgRef);
+
   return (
-    <>
+    <div
+      className={`${
+        desc.toLowerCase() === 'programavimas' ? 'progrBg' : 'designBg'
+      }`}
+      ref={bgRef}
+    >
       <main className="project-info-wrapper">
         <div className="project-image--full-height"></div>
         <div className="info">
@@ -30,7 +39,7 @@ const ProjectPage = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

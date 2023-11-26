@@ -23,7 +23,7 @@
 
 .image-container-left,
 .image-container-right {
-  width: 40vw;
+  width: 35vw;
   overflow: hidden;
   transition: width 1s ease-in-out;
 }
@@ -33,7 +33,7 @@
 }
 
 .right-image {
-  transform: translateX(-45%);
+  transform: translateX(-50%);
   transition: transform 1s ease-in-out;
 }
 

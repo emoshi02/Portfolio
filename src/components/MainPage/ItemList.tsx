@@ -19,6 +19,11 @@ const ItemList = () => {
               galery={dataItem.galery}
               theme={dataItem.theme}
               key={index}
+              arrowClass={
+                index % 6 < 3 || index === data.length - 1
+                  ? 'right-arrow'
+                  : 'left-arrow'
+              }
             />
           </Link>
           {index === data.length - 1 ? <LinkButton label="GitHub" /> : null}

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ImageLeft from '../../assets/svg/img-slider-left.svg';
 import ImageRight from '../../assets/svg/img-slider-right.svg';
+import Arrow from '../../assets/svg/Rodykle.svg';
+import { convertSVGToString } from '../../utils';
 
 const ImageSlider = () => {
   const [showLeftImage, setShowLeftImage] = useState(true);
@@ -38,6 +40,8 @@ const ImageSlider = () => {
       </div>
       <h1 className="slider-text left">Front - end</h1>
       <h1 className="slider-text right">UX/UI</h1>
+      <img src={convertSVGToString(Arrow)} className="projects-arrow" />
+      <h2 className="projects-text">Projektai</h2>
     </div>
   );
 };

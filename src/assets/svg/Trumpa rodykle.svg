@@ -1,6 +1,6 @@
 <svg width="98" height="30" viewBox="0 0 98 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Trumpa rodykle">
-<path id="Line 8" d="M0.566242 15L15 29.4338L29.4338 15L15 0.566243L0.566242 15ZM45 12.5L15 12.5V17.5L45 17.5V12.5Z" fill="white" fill-opacity="0.7"/>
-<line id="Line 7" x1="98" y1="15.5" x2="68" y2="15.5" stroke="white" stroke-opacity="0.7" stroke-width="5"/>
+<path id="Line 8" d="M0.566242 15L15 29.4338L29.4338 15L15 0.566243L0.566242 15ZM45 12.5L15 12.5V17.5L45 17.5V12.5Z" fill="white" fill-opacity="1"/>
+<line id="Line 7" x1="98" y1="15.5" x2="68" y2="15.5" stroke="white" stroke-opacity="1" stroke-width="5"/>
 </g>
 </svg>

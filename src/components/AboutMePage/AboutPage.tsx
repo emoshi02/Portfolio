@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { designIcons, programmingIcons } from '../../skills';
 import ExperienceDiagram from './ExperienceDiagram';
 import Skills from './Skills';
+import { animateBg } from '../../../bgImageAnimation';
 
 const AboutPage = () => {
+  const bgRef = useRef<HTMLDivElement>(null);
+  animateBg(bgRef);
+
   return (
-    <>
+    <main className="mainBg" ref={bgRef}>
       <div className="about-me-page">
         <div className="about-me-wrapper">
           <h1 className="label">Apie mane.</h1>
@@ -39,7 +43,7 @@ const AboutPage = () => {
         />
         <Skills skillLabel="Dizaino Įgūdžiai" skillArray={designIcons} />
       </div>
-    </>
+    </main>
   );
 };
 

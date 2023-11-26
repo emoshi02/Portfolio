@@ -1,7 +1,7 @@
 :root {
   /*vars*/
   --author-name: 12px;
-  --gen-font-size: 12px;
+  --gen-font-size: 14px;
   --author-name--large: 16px;
   --nav-gap: 15px;
   --nav-gap--large: 20px;
@@ -35,6 +35,7 @@
   --exp-sec-bg-color: rgb(163, 8, 236);
   --exp-third-bg-color: rgb(122, 8, 236);
   --exp-fourth-bg-color: rgb(94, 8, 236);
+  --botton-hover-color: rgb(218, 8, 236);
 
   /*shadows*/
   --header-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -42,4 +43,16 @@
   --button-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.25);
   --exp-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.25);
   --side-menu-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+
+  /*gradients*/
+  --gradient: linear-gradient(
+    45deg,
+    #ff52ce,
+    #ffffff,
+    #5fbdff,
+    #9dfc21,
+    #ffffff,
+    #00aa99
+  );
+  --label-gradient: linear-gradient(45deg, #ff52ce, var(--heading-text-color));
 }
