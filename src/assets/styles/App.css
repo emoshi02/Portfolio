@@ -87,7 +87,6 @@ button:hover {
 .nav-item,
 .author-name {
   color: var(--text-color);
-  font-size: var(--gen-font-size);
 }
 
 .nav-item:hover,
@@ -142,6 +141,11 @@ button:hover {
 
 .right {
   right: 100px;
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
 }
 
 .item-wrapper {
@@ -461,6 +465,11 @@ button:hover {
   .menu {
     display: flex;
     width: 26px;
+    cursor: pointer;
+  }
+
+  button {
+    cursor: pointer;
   }
 
   .logo-wrapper {
@@ -580,7 +589,9 @@ button:hover {
   .side-menu-item:focus,
   .side-menu-item:hover {
     border-radius: 5px;
-    background-color: var(--heading-text-color);
+    background-color: var(--image-slider-bg-color);
+    color: var(--exp-sec-bg-color);
+    transition: background-color 0.1s ease-in;
   }
 
   .btn-container {

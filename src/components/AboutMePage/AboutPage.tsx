@@ -2,11 +2,11 @@ import React, { useRef } from 'react';
 import { designIcons, programmingIcons } from '../../skills';
 import ExperienceDiagram from './ExperienceDiagram';
 import Skills from './Skills';
-import { animateBg } from '../../../bgImageAnimation';
+import { UseAnimate } from '../../../UseAnimate';
 
 const AboutPage = () => {
   const bgRef = useRef<HTMLDivElement>(null);
-  animateBg(bgRef);
+  UseAnimate(bgRef);
 
   return (
     <main className="mainBg" ref={bgRef}>

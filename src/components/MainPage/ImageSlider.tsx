@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ImageLeft from '../../assets/svg/img-slider-left.svg';
 import ImageRight from '../../assets/svg/img-slider-right.svg';
 import Arrow from '../../assets/svg/Rodykle.svg';
@@ -15,6 +15,25 @@ const ImageSlider = () => {
     setShowLeftImage(true);
   };
 
+  useEffect(() => {
+    let resizeTimer: string | number | NodeJS.Timeout | undefined;
+
+    const handleResize = () => {
+      document.body.classList.add('resize-animation-stopper');
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        document.body.classList.remove('resize-animation-stopper');
+      }, 100);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      clearTimeout(resizeTimer);
+    };
+  }, []);
+
   return (
     <div className="image-slider">
       <div
@@ -25,14 +44,14 @@ const ImageSlider = () => {
       >
         <img
           className="slider left-image"
-          src={ImageLeft.toString()}
+          src={convertSVGToString(ImageLeft)}
           alt="Left Image"
         />
       </div>
       <div className="image-container-right" onMouseLeave={handleMouseLeave}>
         <img
           className="slider right-image"
-          src={ImageRight.toString()}
+          src={convertSVGToString(ImageRight)}
           alt="Right Image"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}

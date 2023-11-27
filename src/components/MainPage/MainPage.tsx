@@ -2,11 +2,11 @@ import React, { useRef } from 'react';
 import ImageSlider from './ImageSlider';
 import ItemList from './ItemList';
 import logo from '../../assets/svg/logo.svg';
-import { animateBg } from '../../../bgImageAnimation';
+import { UseAnimate } from '../../../UseAnimate';
 
 const MainPage = () => {
   const bgRef = useRef<HTMLDivElement>(null);
-  animateBg(bgRef);
+  UseAnimate(bgRef);
   return (
     <>
       <main className="mainBg" ref={bgRef}>

@@ -2,14 +2,14 @@ import React, { useRef } from 'react';
 import { useParams } from 'react-router';
 import { data } from '../../projectData';
 import LinkButton from '../LinkButton';
-import { animateBg } from '../../../bgImageAnimation';
+import { UseAnimate } from '../../../UseAnimate';
 
 const ProjectPage = () => {
   const id = useParams();
   const { label, desc, info, secDesc, galery } = data[Number(id.id)];
 
   const bgRef = useRef<HTMLDivElement>(null);
-  animateBg(bgRef);
+  UseAnimate(bgRef);
 
   return (
     <div
