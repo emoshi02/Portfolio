@@ -7,6 +7,7 @@ import Header from './Header';
 import MainPage from './MainPage/MainPage';
 import ProjectPage from './ProjectPage/ProjectPage';
 import SideMenu from './SideMenu';
+import { ScrollToTop } from '../useScrollToTop';
 
 const App: React.FC = () => {
   const [openSideMenu, setOpenSideMenu] = useState(false);
@@ -27,8 +28,9 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Header openSideMenu={setOpenSideMenu} />
-      {openSideMenu && <SideMenu />}
+      <Header setOpenSideMenu={setOpenSideMenu} />
+      {openSideMenu && <SideMenu setOpenSideMenu={setOpenSideMenu} />}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/Project/:id" element={<ProjectPage />} />

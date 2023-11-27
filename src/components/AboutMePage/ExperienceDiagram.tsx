@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import { experienceData } from '../../experienceData';
+import { convertSVGToString } from '../../utils';
+import arrow from '../../assets/svg/ilgaRodykle.svg';
 
 const ExperienceDiagram = () => {
   return (
@@ -12,6 +14,19 @@ const ExperienceDiagram = () => {
               className="experience-data experience-container"
               key={`experience-${index}`}
             >
+              <p
+                className={`${
+                  index % 2 === 0 ? 'exp-period-left' : 'exp-period-right'
+                }`}
+              >
+                {data.period}
+              </p>
+              <img
+                className={`${
+                  index % 2 === 0 ? 'arrow-exp-left' : 'arrow-exp-right'
+                }`}
+                src={convertSVGToString(arrow)}
+              />{' '}
               {data.experience}
             </div>
             {index % 2 === 1 && (

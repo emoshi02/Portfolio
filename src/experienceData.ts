@@ -5,19 +5,19 @@ export type Experience = {
 
 export const experienceData: Experience[] = [
   {
-    experience: 'Lorem Ipsum',
-    period: '2021-2022',
+    experience: 'Elektrėnų meno mokykla - Dailė',
+    period: '2011 - 2016',
   },
   {
-    experience: 'Lorem Ipsum',
-    period: '2021-2022',
+    experience: 'Elektrėnų Versmės gimnazija',
+    period: '2017 - 2021',
   },
   {
-    experience: 'Lorem Ipsum',
-    period: '2021-2022',
+    experience: 'Multimedija VilniusTech universitete',
+    period: '2021 - dabar',
   },
   {
-    experience: 'Lorem Ipsum',
-    period: '2021-2022',
+    experience: 'Front-end programuotoja praktikantė Wix',
+    period: '2023-06-18 - dabar',
   },
 ];
