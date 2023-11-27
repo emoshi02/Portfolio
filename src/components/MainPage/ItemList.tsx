@@ -17,7 +17,6 @@ const ItemList = () => {
               info={dataItem.info}
               secDesc={dataItem.secDesc}
               galery={dataItem.galery}
-              theme={dataItem.theme}
               key={index}
               arrowClass={
                 index % 6 < 3 || index === data.length - 1
@@ -26,7 +25,9 @@ const ItemList = () => {
               }
             />
           </Link>
-          {index === data.length - 1 ? <LinkButton label="GitHub" /> : null}
+          {index === data.length - 1 ? (
+            <LinkButton label="GitHub" url="https://github.com/emoshi02" />
+          ) : null}
         </Fragment>
       ))}
     </div>

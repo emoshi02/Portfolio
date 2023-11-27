@@ -14,34 +14,30 @@ const AboutPage = () => {
         <div className="about-me-wrapper">
           <h1 className="label">Apie mane.</h1>
           <p className="aditional-desc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Sveiki! Esu Emilija, pradedančioji front-end programuotoja. Esu
+            kūrybinga, protinga bei labai atsakinga. Esu pasiryžusi toliau augti
+            ir mokytis, kad galėčiau pritaikyti naujausias technologijas ir
+            įgytas žinias savo darbuose. Portfolio - ne tik mano darbų rinkinys,
+            bet ir mano pasaulėžiūros bei įsipareigojimo kūrybiškumui ir
+            aukštiems standartams atspindys. <br />
+            <br />
+            Džiaugiuosi galėdama pasidalinti savo darbais su Jumis. Leiskite man
+            parodyti, kaip aš galiu pridėti vertės Jūsų projektams!
           </p>
         </div>
       </div>
       <ExperienceDiagram />
       <div className="experience-text-wrapper">
         <p className="aditional-desc exp-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Praktikos bei įgytų žinių apžvalga.
         </p>
       </div>
       <div className="skill-wrapper">
         <Skills
-          skillLabel="Programavimo Įgūdžiai"
+          skillLabel="Programavimo įgūdžiai"
           skillArray={programmingIcons}
         />
-        <Skills skillLabel="Dizaino Įgūdžiai" skillArray={designIcons} />
+        <Skills skillLabel="Dizaino įgūdžiai" skillArray={designIcons} />
       </div>
     </main>
   );

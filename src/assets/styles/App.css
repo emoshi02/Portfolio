@@ -49,6 +49,7 @@ button:hover {
   transition: 0.5s;
   box-shadow: 0 0 5px var(--botton-hover-color);
   text-shadow: 0 0 5px var(--botton-hover-color);
+  cursor: pointer;
 }
 
 .menu {
@@ -157,6 +158,16 @@ button:hover {
   background: var(--item-bg-color);
   padding: 16px;
   position: relative;
+  border: 1px solid var(--item-bg-color);
+}
+
+.item-wrapper:hover {
+  border: 1px solid var(--botton-hover-color);
+  color: var(--botton-hover-color);
+  transition: 0.5s;
+  box-shadow: 0 0 5px var(--botton-hover-color);
+  text-shadow: 0 0 5px var(--botton-hover-color);
+  cursor: pointer;
 }
 
 .project-image {
@@ -181,7 +192,7 @@ button:hover {
 }
 
 .right-arrow {
-  left: -70px;
+  left: -71px;
 }
 
 .left-arrow,
@@ -194,7 +205,7 @@ button:hover {
 
 .left-arrow {
   transform: rotate(180deg);
-  right: -70px;
+  right: -71px;
 }
 
 .main-body {
@@ -206,7 +217,7 @@ button:hover {
 
 .project-image--full-height {
   width: 250px;
-  height: 370px;
+  height: auto;
   background: #d9d9d9;
   box-shadow: var(--item-shadow);
   border-radius: 20px;
@@ -244,6 +255,9 @@ button:hover {
 .aditional-desc {
   color: var(--paragraph-color);
   font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  text-align: left;
 }
 
 .arrow {
@@ -290,12 +304,14 @@ button:hover {
   align-items: center;
   flex-direction: column;
   padding: 0 10vw;
+  height: 100vh;
 }
 
 .galery-item {
-  min-height: 200px;
-  min-width: 200px;
-  background: #d9d9d9;
+  min-height: 250px;
+  height: 250px;
+  width: 250px;
+  min-width: 250px;
   box-shadow: var(--item-shadow);
 }
 
@@ -353,6 +369,7 @@ button:hover {
   box-shadow: var(--exp-shadow);
   font-size: 14px;
   color: var(--text-color);
+  text-align: center;
 }
 
 .experience-container {
@@ -370,6 +387,7 @@ button:hover {
 .exp-text {
   width: 50vw;
   margin: 50px 0;
+  text-align: center;
 }
 
 .experience-text-wrapper {
@@ -403,6 +421,7 @@ button:hover {
 .exp-period-right {
   position: absolute;
   top: -10px;
+  font-size: 12px;
 }
 
 .exp-period-left {
@@ -438,6 +457,11 @@ button:hover {
 }
 
 @media screen and (max-width: 675px) {
+  .project-info,
+  .aditional-desc {
+    text-align: justify;
+  }
+
   .projects-text,
   .projects-arrow {
     display: none;
@@ -465,10 +489,6 @@ button:hover {
   .menu {
     display: flex;
     width: 26px;
-    cursor: pointer;
-  }
-
-  button {
     cursor: pointer;
   }
 
@@ -512,7 +532,7 @@ button:hover {
   .experience-data {
     width: var(--exp-width);
     height: var(--exp-height);
-    font-size: var(--gen-font-size);
+    font-size: 11px;
   }
 
   .experience-text {

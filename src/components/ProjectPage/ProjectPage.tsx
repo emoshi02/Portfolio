@@ -6,7 +6,8 @@ import { UseAnimate } from '../../../UseAnimate';
 
 const ProjectPage = () => {
   const id = useParams();
-  const { label, desc, info, secDesc, galery } = data[Number(id.id)];
+  const { label, desc, info, secDesc, galery, mainImage, url } =
+    data[Number(id.id)];
 
   const bgRef = useRef<HTMLDivElement>(null);
   UseAnimate(bgRef);
@@ -19,23 +20,21 @@ const ProjectPage = () => {
       ref={bgRef}
     >
       <main className="project-info-wrapper">
-        <div className="project-image--full-height"></div>
+        <img className="project-image--full-height" src={mainImage} />
         <div className="info">
           <div className="project-info-label">
             <h1 className="label">{label}</h1>
             <h2 className="desc">{desc}</h2>
           </div>
           <p className="project-info">{info}</p>
-          <LinkButton label="Figma" />
+          <LinkButton label="Figma" url={url} />
         </div>
       </main>
       <div className="additional-info-wrapper">
         <p className="aditional-desc">{secDesc}</p>
         <div className="galery-wrapper">
           {galery.map((item, index) => (
-            <div className="galery-item" key={index}>
-              {item}
-            </div>
+            <img className="galery-item" key={index} src={item} />
           ))}
         </div>
       </div>
