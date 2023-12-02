@@ -1,12 +1,11 @@
 import { RefObject, useEffect } from 'react';
 
-export const UseAnimate = (ref: RefObject<HTMLDivElement>) => {
+export const useAnimate = (ref: RefObject<HTMLDivElement>) => {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (ref.current) {
         const moveX = ((e.pageX * -1) / 15) * 8;
         const moveY = ((e.pageY * -1) / 15) * 8;
-
         ref.current.style.backgroundPosition = `${moveX}px ${moveY}px`;
       }
     };

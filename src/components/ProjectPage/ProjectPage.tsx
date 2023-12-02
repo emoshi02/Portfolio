@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useParams } from 'react-router';
 import { data } from '../../projectData';
 import LinkButton from '../LinkButton';
-import { UseAnimate } from '../../../UseAnimate';
+import { useAnimate } from '../../UseAnimate';
 
 const ProjectPage = () => {
   const id = useParams();
@@ -10,7 +10,7 @@ const ProjectPage = () => {
     data[Number(id.id)];
 
   const bgRef = useRef<HTMLDivElement>(null);
-  UseAnimate(bgRef);
+  useAnimate(bgRef);
 
   return (
     <section
