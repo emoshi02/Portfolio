@@ -232,7 +232,8 @@ button:hover {
   height: 100vh;
 }
 
-.label {
+.label,
+.label-skill {
   background-image: var(--label-gradient);
   cursor: pointer;
   -webkit-background-clip: text;
@@ -241,6 +242,10 @@ button:hover {
   color: transparent;
   background-size: 400%;
   animation: text-icon-animation 5s alternate infinite;
+}
+
+.label-skill {
+  font-size: 20px;
 }
 
 .label-item {
@@ -277,7 +282,7 @@ button:hover {
 
 .projects-text {
   position: absolute;
-  color: var(--header-bg-color);
+  color: var(--heading-text-color);
   top: 110%;
   right: 51%;
 }
@@ -294,7 +299,7 @@ button:hover {
   height: 35px;
   border-radius: 50px;
   box-shadow: var(--button-shadow);
-  background: var(--button-link);
+  background: var(--item-bg-color);
   color: var(--text-color);
 }
 
@@ -420,8 +425,14 @@ button:hover {
 .exp-period-left,
 .exp-period-right {
   position: absolute;
-  top: -10px;
-  font-size: 12px;
+  top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .exp-period-left {
@@ -429,7 +440,11 @@ button:hover {
 }
 
 .exp-period-right {
-  right: -100px;
+  left: 200px;
+}
+
+.exp-text-wrapped {
+  width: 162px;
 }
 
 .skill-icon {
@@ -442,6 +457,10 @@ button:hover {
   column-gap: 4vw;
   row-gap: 4vw;
   align-items: center;
+  background: var(--skill-color);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--item-shadow);
 }
 
 .skill {
@@ -460,6 +479,10 @@ button:hover {
   .project-info,
   .aditional-desc {
     text-align: justify;
+  }
+
+  .exp-text {
+    text-align: center;
   }
 
   .projects-text,
@@ -552,6 +575,10 @@ button:hover {
     width: 80vw;
   }
 
+  .exp-period-right {
+    left: 150px;
+  }
+
   .info {
     width: 80vw;
     text-align: justify;
@@ -572,7 +599,7 @@ button:hover {
   }
 
   .additional-info-wrapper {
-    margin-top: 100px;
+    margin-top: 20px;
   }
 
   .project-info-label {
@@ -581,7 +608,7 @@ button:hover {
 
   .side-menu {
     position: fixed;
-    background: var(--exp-sec-bg-color);
+    background: var(--header-bg-color);
     height: 100vh;
     width: 60vw;
     top: var(--header-footer-height);
@@ -629,6 +656,21 @@ button:hover {
 
   .skill-icon {
     width: 40px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .galery-item {
+    width: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    height: 200px;
+  }
+
+  .btn-container {
+    margin-bottom: 50px;
   }
 }
 

@@ -9,7 +9,7 @@ const Skills = ({
 }) => {
   return (
     <div className="skill">
-      <h1 className="label">{skillLabel}</h1>
+      <h1 className="label-skill">{skillLabel}</h1>
       <div className="icon-wrapper">
         {skillArray.map((item, index) => (
           <img className="skill-icon" key={index} src={item} />

@@ -22,15 +22,16 @@
   --exp-width: 40vw;
 
   /*colors*/
-  --header-bg-color: rgb(103, 14, 206);
+  /* --header-bg-color: rgb(103, 14, 206); */
+  --header-bg-color: rgb(112, 128, 144);
   --image-slider-bg-color: rgb(240, 240, 255);
   --app-bg-color: rgb(36, 36, 71);
   --item-bg-color: rgb(85, 82, 235);
-  --button-link: rgb(16, 12, 222);
   --text-color: rgb(255, 255, 255);
   --paragraph-color: rgb(208, 206, 206);
   --heading-text-color: rgb(108, 14, 218);
-  --arrow-color: rgb(194, 194, 194);
+  --arrow-color: rgb(194, 194, 194, 0.5);
+  --skill-color: rgb(218, 8, 236, 0.5);
   --exp-first-bg-color: rgb(218, 8, 236);
   --exp-sec-bg-color: rgb(163, 8, 236);
   --exp-third-bg-color: rgb(122, 8, 236);
@@ -50,9 +51,8 @@
     #ff52ce,
     #ffffff,
     #5fbdff,
-    #9dfc21,
     #ffffff,
-    #00aa99
+    #ff52ce
   );
   --label-gradient: linear-gradient(45deg, #ff52ce, var(--heading-text-color));
 }

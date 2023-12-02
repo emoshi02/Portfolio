@@ -13,7 +13,7 @@ const ProjectPage = () => {
   UseAnimate(bgRef);
 
   return (
-    <div
+    <section
       className={`${
         desc.toLowerCase() === 'programavimas' ? 'progrBg' : 'designBg'
       }`}
@@ -27,18 +27,23 @@ const ProjectPage = () => {
             <h2 className="desc">{desc}</h2>
           </div>
           <p className="project-info">{info}</p>
-          <LinkButton label="Figma" url={url} />
+          <LinkButton
+            label={`${
+              desc.toLowerCase() === 'programavimas' ? 'GitHub' : 'Figma'
+            }`}
+            url={url}
+          />
         </div>
       </main>
-      <div className="additional-info-wrapper">
+      <section className="additional-info-wrapper">
         <p className="aditional-desc">{secDesc}</p>
         <div className="galery-wrapper">
           {galery.map((item, index) => (
             <img className="galery-item" key={index} src={item} />
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 
