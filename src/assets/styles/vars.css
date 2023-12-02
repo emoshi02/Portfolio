@@ -50,9 +50,11 @@
     45deg,
     #ff52ce,
     #ffffff,
-    #5fbdff,
+    #dc5fff,
     #ffffff,
-    #ff52ce
+    #ff52ce,
+    #ffffff,
+    #dc5fff
   );
   --label-gradient: linear-gradient(45deg, #ff52ce, var(--heading-text-color));
 }

@@ -576,7 +576,7 @@ button:hover {
   }
 
   .exp-period-right {
-    left: 150px;
+    left: 40vw;
   }
 
   .info {
@@ -608,7 +608,7 @@ button:hover {
 
   .side-menu {
     position: fixed;
-    background: var(--header-bg-color);
+    background: linear-gradient(var(--header-bg-color), white);
     height: 100vh;
     width: 60vw;
     top: var(--header-footer-height);
