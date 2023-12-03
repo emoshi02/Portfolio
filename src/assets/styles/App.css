@@ -37,6 +37,7 @@ html {
 .header {
   position: fixed;
   z-index: 3;
+  z-index: 3;
   top: 0;
   width: 100vw;
   box-shadow: var(--header-shadow);
@@ -50,6 +51,7 @@ button:hover {
   box-shadow: 0 0 5px var(--botton-hover-color);
   text-shadow: 0 0 5px var(--botton-hover-color);
   cursor: pointer;
+  box-shadow: var(--header-shadow);
 }
 
 .menu {
@@ -57,6 +59,7 @@ button:hover {
 }
 
 .logo {
+  width: 15px;
   width: 15px;
 }
 
@@ -80,7 +83,9 @@ button:hover {
 
 .nav-items {
   width: 200px;
+  width: 200px;
   display: flex;
+  justify-content: space-evenly;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -125,6 +130,9 @@ button:hover {
 
 .icon svg path {
   fill: var(--text-color);
+  width: var(--icon-size);
+  height: var(--icon-size);
+  cursor: pointer;
 }
 
 .icon svg {
@@ -151,10 +159,13 @@ button:hover {
 
 .item-wrapper {
   width: var(--item-width);
+  width: var(--item-width);
   height: 270px;
   flex-shrink: 0;
   box-shadow: var(--item-shadow);
+  box-shadow: var(--item-shadow);
   border-radius: 20px;
+  background: var(--item-bg-color);
   background: var(--item-bg-color);
   padding: 16px;
   position: relative;
@@ -168,6 +179,8 @@ button:hover {
   box-shadow: 0 0 5px var(--botton-hover-color);
   text-shadow: 0 0 5px var(--botton-hover-color);
   cursor: pointer;
+  position: relative;
+  border: 1px solid var(--item-bg-color);
 }
 
 .project-image {
@@ -182,30 +195,16 @@ button:hover {
 
 .item-list-wrapper {
   width: calc(var(--item-width) * 3 + 10vw);
+  width: calc(var(--item-width) * 3 + 10vw);
   display: flex;
+  align-items: center;
+  justify-content: center;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   gap: var(--item-gap);
   margin: var(--top-bottom-margin);
-}
-
-.right-arrow {
-  left: -71px;
-}
-
-.left-arrow,
-.right-arrow {
-  position: absolute;
-  top: 45%;
-  z-index: 1;
-  width: 70px;
-}
-
-.left-arrow {
-  transform: rotate(180deg);
-  right: -71px;
 }
 
 .main-body {
@@ -218,7 +217,9 @@ button:hover {
 .project-image--full-height {
   width: 250px;
   height: auto;
+  height: auto;
   background: #d9d9d9;
+  box-shadow: var(--item-shadow);
   box-shadow: var(--item-shadow);
   border-radius: 20px;
 }
@@ -265,15 +266,6 @@ button:hover {
   text-align: left;
 }
 
-.arrow {
-  position: absolute;
-  z-index: 1;
-  right: 94.5%;
-  top: 45%;
-  transform: rotate(180deg);
-  width: 70px;
-}
-
 .projects-arrow {
   position: absolute;
   transform: rotate(-90deg);
@@ -297,6 +289,8 @@ button:hover {
 .button-link {
   width: 120px;
   height: 35px;
+  width: 120px;
+  height: 35px;
   border-radius: 50px;
   box-shadow: var(--button-shadow);
   background: var(--item-bg-color);
@@ -310,13 +304,17 @@ button:hover {
   flex-direction: column;
   padding: 0 10vw;
   height: 100vh;
+  height: 100vh;
 }
 
 .galery-item {
   min-height: 250px;
   height: 250px;
   width: 250px;
+  height: 250px;
+  width: 250px;
   min-width: 250px;
+  box-shadow: var(--item-shadow);
   box-shadow: var(--item-shadow);
 }
 
@@ -325,6 +323,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 50px 0;
   padding: 50px 0;
 }
 
@@ -347,6 +346,10 @@ button:hover {
   gap: 40px;
   width: 50vw;
   text-align: justify;
+  flex-direction: column;
+  gap: 40px;
+  width: 50vw;
+  text-align: justify;
 }
 
 .about-me-page {
@@ -360,6 +363,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 60vw;
+  width: 60vw;
   justify-items: center;
 }
 
@@ -370,15 +374,20 @@ button:hover {
   width: 200px;
   height: 50px;
   background-color: var(--exp-first-bg-color);
+  background-color: var(--exp-first-bg-color);
   border-radius: 50px;
   box-shadow: var(--exp-shadow);
+  box-shadow: var(--exp-shadow);
   font-size: 14px;
+  color: var(--text-color);
+  text-align: center;
   color: var(--text-color);
   text-align: center;
 }
 
 .experience-container {
   margin: 20px 0;
+  position: relative;
   position: relative;
 }
 
@@ -400,6 +409,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 200px;
+  text-align: justify;
   text-align: justify;
 }
 
@@ -449,6 +459,7 @@ button:hover {
 
 .skill-icon {
   width: 50px;
+  width: 50px;
 }
 
 .icon-wrapper {
@@ -469,6 +480,10 @@ button:hover {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+}
+
+.btn-container {
+  width: 200px;
 }
 
 .btn-container {
@@ -513,6 +528,7 @@ button:hover {
     display: flex;
     width: 26px;
     cursor: pointer;
+    cursor: pointer;
   }
 
   .logo-wrapper {
@@ -541,6 +557,8 @@ button:hover {
     gap: 20px;
     color: var(--text-color);
     font-size: 12px;
+    color: var(--text-color);
+    font-size: 12px;
   }
 
   .footer-name {
@@ -553,6 +571,9 @@ button:hover {
   }
 
   .experience-data {
+    width: var(--exp-width);
+    height: var(--exp-height);
+    font-size: 11px;
     width: var(--exp-width);
     height: var(--exp-height);
     font-size: 11px;
@@ -611,16 +632,21 @@ button:hover {
     background: linear-gradient(var(--header-bg-color), white);
     height: 100vh;
     width: 60vw;
+    width: 60vw;
     top: var(--header-footer-height);
     right: 0;
+    box-shadow: var(--side-menu-shadow);
+    z-index: 2;
     box-shadow: var(--side-menu-shadow);
     z-index: 2;
   }
 
   .side-menu-items {
     padding: var(--side-menu-gaps) 10px;
+    padding: var(--side-menu-gaps) 10px;
     display: flex;
     flex-direction: column;
+    gap: var(--side-menu-gaps);
     gap: var(--side-menu-gaps);
   }
 

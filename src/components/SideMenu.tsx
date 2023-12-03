@@ -34,7 +34,16 @@ const SideMenu: React.FC<SideMenuProps> = ({ setOpenSideMenu }) => {
         <Link to={'/About'}>
           <li className="side-menu-item">Apie</li>
         </Link>
-        <li className="side-menu-item">CV</li>
+        <li
+          className="side-menu-item"
+          onClick={() =>
+            window.open(
+              'https://drive.google.com/file/d/1eecz71GD59uQEKrB8UUV8xxXMJpVyLS8/view?fbclid=IwAR1Tzd19tlRSoUhk124rVEOZw5y68Pf87oOZbSOQrEVIJzdsvg22C1FTt44',
+            )
+          }
+        >
+          CV
+        </li>
       </ul>
     </div>
   );

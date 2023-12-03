@@ -7,6 +7,14 @@
   --nav-gap--large: 20px;
   --header-footer-height--large: 56px;
   --header-footer-height: 40px;
+  /*vars*/
+  --author-name: 12px;
+  --gen-font-size: 14px;
+  --author-name--large: 16px;
+  --nav-gap: 15px;
+  --nav-gap--large: 20px;
+  --header-footer-height--large: 56px;
+  --header-footer-height: 40px;
   --header-footer-padding: 0 40px;
   --logo-height: 36px;
   --logo-width: 26px;

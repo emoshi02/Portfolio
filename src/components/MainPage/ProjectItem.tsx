@@ -1,5 +1,7 @@
 import React from 'react';
 import { Data } from '../../projectData';
+import arrow from '../../assets/svg/Trumpa rodykle.svg';
+import { convertSVGToString } from '../../utils';
 
 const ProjectItem = ({ label, desc, image }: Partial<Data>) => {
   return (
