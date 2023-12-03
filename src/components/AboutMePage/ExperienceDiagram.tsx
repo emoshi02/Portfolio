@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 import { experienceData } from '../../experienceData';
-import { convertSVGToString } from '../../utils';
-import arrow from '../../assets/svg/ilgaRodykle.svg';
 
 const ExperienceDiagram = () => {
   return (
@@ -21,13 +19,7 @@ const ExperienceDiagram = () => {
               >
                 {data.period}
               </p>
-              <img
-                className={`${
-                  index % 2 === 0 ? 'arrow-exp-left' : 'arrow-exp-right'
-                }`}
-                src={convertSVGToString(arrow)}
-              />{' '}
-              {data.experience}
+              <p className="exp-text-wrapped">{data.experience}</p>
             </div>
             {index % 2 === 1 && (
               <div

@@ -2,15 +2,15 @@ import React, { useRef } from 'react';
 import { designIcons, programmingIcons } from '../../skills';
 import ExperienceDiagram from './ExperienceDiagram';
 import Skills from './Skills';
-import { UseAnimate } from '../../../UseAnimate';
+import { useAnimate } from '../../UseAnimate';
 
 const AboutPage = () => {
   const bgRef = useRef<HTMLDivElement>(null);
-  UseAnimate(bgRef);
+  useAnimate(bgRef);
 
   return (
     <main className="mainBg" ref={bgRef}>
-      <div className="about-me-page">
+      <section className="about-me-page">
         <div className="about-me-wrapper">
           <h1 className="label">Apie mane.</h1>
           <p className="aditional-desc">
@@ -25,7 +25,7 @@ const AboutPage = () => {
             parodyti, kaip aš galiu pridėti vertės Jūsų projektams!
           </p>
         </div>
-      </div>
+      </section>
       <ExperienceDiagram />
       <div className="experience-text-wrapper">
         <p className="aditional-desc exp-text">
